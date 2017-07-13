@@ -13,6 +13,7 @@ Vue.config.productionTip = false;
 Vue.material.registerTheme('default', {
   primary: 'teal',
   accent: 'pink',
+  warn: 'red',
 });
 
 Vue.material.registerTheme('student', {
@@ -22,10 +23,12 @@ Vue.material.registerTheme('student', {
 Vue.material.registerTheme('prepod', {
   primary: 'blue',
   accent: 'amber',
+  warn: 'red',
 });
 Vue.material.registerTheme('otdel', {
-  primary: 'pink',
+  primary: 'indigo',
   accent: 'amber',
+  warn: 'red',
 });
 
 /* eslint-disable no-new */

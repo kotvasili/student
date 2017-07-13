@@ -20,13 +20,25 @@
       </div>
     <div class="teacher-groups">
       <md-table-card>
-        <md-toolbar>
+        <md-toolbar class="groups-group">
           <h1 class="md-title">Группы специальности: ИТУТС</h1>
         </md-toolbar>
         <div class="teacher-groups-inner">
           <div class="group-wrap">
             <md-toolbar>
               <p class="md-subheading">482472</p>
+              <div class="group-wrap-starosta">
+                <div>
+                  <md-avatar>
+                    <md-icon class="md-primary">account_circle</md-icon>
+                  </md-avatar>
+                  <span>Солодарь Василий Александрович</span>
+                  <md-button class="md-icon-button md-list-action">
+                    <md-icon class="md-primary">chat_bubble</md-icon>
+                    <md-tooltip md-direction="right">Написать старосте</md-tooltip>
+                  </md-button>
+                </div>
+              </div>
             </md-toolbar>
           </div>
           <md-table>
@@ -53,11 +65,23 @@
               </md-table-row>
             </md-table-body>
           </md-table>
+           <md-divider class="md-inset"></md-divider>
         </div>
         <div class="teacher-groups-inner">
           <div class="group-wrap">
             <md-toolbar>
               <p class="md-subheading">482471</p>
+              <div class="group-wrap-starosta">
+                <div>
+                  <md-avatar>
+                    <md-icon class="md-primary">account_circle</md-icon>
+                  </md-avatar>
+                  <span>Солодарь Василий Александрович</span>
+                  <md-button class="md-icon-button md-list-action">
+                    <md-icon class="md-primary">chat_bubble</md-icon>
+                  </md-button>
+                </div>
+              </div>
             </md-toolbar>
           </div>
           <md-table>
@@ -84,11 +108,23 @@
               </md-table-row>
             </md-table-body>
           </md-table>
+          <md-divider class="md-inset"></md-divider>
         </div>
         <div class="teacher-groups-inner">
           <div class="group-wrap">
             <md-toolbar>
               <p class="md-subheading">482473</p>
+              <div class="group-wrap-starosta">
+                <div>
+                  <md-avatar>
+                    <md-icon class="md-primary">account_circle</md-icon>
+                  </md-avatar>
+                  <span>Солодарь Василий Александрович</span>
+                  <md-button class="md-icon-button md-list-action">
+                    <md-icon class="md-primary">chat_bubble</md-icon>
+                  </md-button>
+                </div>
+              </div>
             </md-toolbar>
           </div>
           <md-table>
@@ -115,6 +151,147 @@
               </md-table-row>
             </md-table-body>
           </md-table>
+          <md-divider class="md-inset"></md-divider>
+        </div>
+        <div class="groups-otchet">
+          <md-button class="md-raised md-primary">Сформировать отчет по специальности</md-button>
+        </div>
+      </md-table-card>
+    </div>
+    <div class="teacher-groups">
+      <md-table-card>
+        <md-toolbar class="groups-group">
+          <h1 class="md-title">Группы специальности: ПОИТ</h1>
+        </md-toolbar>
+        <div class="teacher-groups-inner">
+          <div class="group-wrap">
+            <md-toolbar>
+              <p class="md-subheading">482472</p>
+              <div class="group-wrap-starosta">
+                <div>
+                  <md-avatar>
+                    <md-icon class="md-primary">account_circle</md-icon>
+                  </md-avatar>
+                  <span>Солодарь Василий Александрович</span>
+                  <md-button class="md-icon-button md-list-action">
+                    <md-icon class="md-primary">chat_bubble</md-icon>
+                    <md-tooltip md-direction="right">Написать старосте</md-tooltip>
+                  </md-button>
+                </div>
+              </div>
+            </md-toolbar>
+          </div>
+          <md-table>
+            <md-table-header>
+              <md-table-row>
+                <md-table-head>
+                  ФИО
+                </md-table-head>
+                <md-table-head>№ зач</md-table-head>
+                <md-table-head>Город</md-table-head>
+                <md-table-head>Телефон</md-table-head>
+                <md-table-head>E-mail</md-table-head>
+                <md-table-head>Предприятие</md-table-head>
+                <md-table-head>ФИО руководителя</md-table-head>
+                <md-table-head>Должность руководителя</md-table-head>
+                <md-table-head>Статус договора</md-table-head>
+              </md-table-row>
+            </md-table-header>
+            <md-table-body>
+              <md-table-row v-for="(row, rowIndex) in nutrition" :key="rowIndex" :md-item="row" md-auto-select md-selection>
+                <md-table-cell v-for="(column, columnIndex) in row" :key="columnIndex">
+                  {{ column }}
+                </md-table-cell>
+              </md-table-row>
+            </md-table-body>
+          </md-table>
+           <md-divider class="md-inset"></md-divider>
+        </div>
+        <div class="teacher-groups-inner">
+          <div class="group-wrap">
+            <md-toolbar>
+              <p class="md-subheading">482471</p>
+              <div class="group-wrap-starosta">
+                <div>
+                  <md-avatar>
+                    <md-icon class="md-primary">account_circle</md-icon>
+                  </md-avatar>
+                  <span>Солодарь Василий Александрович</span>
+                  <md-button class="md-icon-button md-list-action">
+                    <md-icon class="md-primary">chat_bubble</md-icon>
+                  </md-button>
+                </div>
+              </div>
+            </md-toolbar>
+          </div>
+          <md-table>
+            <md-table-header>
+              <md-table-row>
+                <md-table-head>
+                  ФИО
+                </md-table-head>
+                <md-table-head>№ зач</md-table-head>
+                <md-table-head>Город</md-table-head>
+                <md-table-head>Телефон</md-table-head>
+                <md-table-head>E-mail</md-table-head>
+                <md-table-head>Предприятие</md-table-head>
+                <md-table-head>ФИО руководителя</md-table-head>
+                <md-table-head>Должность руководителя</md-table-head>
+                <md-table-head>Статус договора</md-table-head>
+              </md-table-row>
+            </md-table-header>
+            <md-table-body>
+              <md-table-row v-for="(row, rowIndex) in nutrition" :key="rowIndex" :md-item="row" md-auto-select md-selection>
+                <md-table-cell v-for="(column, columnIndex) in row" :key="columnIndex">
+                  {{ column }}
+                </md-table-cell>
+              </md-table-row>
+            </md-table-body>
+          </md-table>
+          <md-divider class="md-inset"></md-divider>
+        </div>
+        <div class="teacher-groups-inner">
+          <div class="group-wrap">
+            <md-toolbar>
+              <p class="md-subheading">482473</p>
+              <div class="group-wrap-starosta">
+                <div>
+                  <md-avatar>
+                    <md-icon class="md-primary">account_circle</md-icon>
+                  </md-avatar>
+                  <span>Солодарь Василий Александрович</span>
+                  <md-button class="md-icon-button md-list-action">
+                    <md-icon class="md-primary">chat_bubble</md-icon>
+                  </md-button>
+                </div>
+              </div>
+            </md-toolbar>
+          </div>
+          <md-table>
+            <md-table-header>
+              <md-table-row>
+                <md-table-head>
+                  ФИО
+                </md-table-head>
+                <md-table-head>№ зач</md-table-head>
+                <md-table-head>Город</md-table-head>
+                <md-table-head>Телефон</md-table-head>
+                <md-table-head>E-mail</md-table-head>
+                <md-table-head>Предприятие</md-table-head>
+                <md-table-head>ФИО руководителя</md-table-head>
+                <md-table-head>Должность руководителя</md-table-head>
+                <md-table-head>Статус договора</md-table-head>
+              </md-table-row>
+            </md-table-header>
+            <md-table-body>
+              <md-table-row v-for="(row, rowIndex) in nutrition" :key="rowIndex" :md-item="row" md-auto-select md-selection>
+                <md-table-cell v-for="(column, columnIndex) in row" :key="columnIndex">
+                  {{ column }}
+                </md-table-cell>
+              </md-table-row>
+            </md-table-body>
+          </md-table>
+          <md-divider class="md-inset"></md-divider>
         </div>
         <div class="groups-otchet">
           <md-button class="md-raised md-primary">Сформировать отчет по специальности</md-button>
@@ -147,7 +324,7 @@ export default {
         type: 'Минск',
         calories: '+356(00)000-00-00',
         fat: 'nagibator99@mail.com',
-        fat2: 'ООО Белаз',
+        fat2: 'Департамент Охраны МВД РБ',
         comment: 'Прокопоненко В.А.',
         comment2: 'Главный наладчик наладочного оборудования отдела уборки прилегающей территории',
         status: true,
@@ -219,9 +396,16 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
+  .teacher-groups:nth-child(n + 3){
+    margin:40px 0;
+  }
   .teacher-groups .md-subheading{
     text-align: center;
     width: 100%;
+  }
+  .teacher-groups .md-table-card.md-theme-prepod .groups-group{
+    background-color: #2196f3;
+    color: rgba(255, 255, 255, .87);
   }
   .teacher-groups .md-table{
     box-sizing: border-box;
@@ -264,5 +448,14 @@ export default {
   }
   .groups-otchet{
     margin: 20px auto;
+  }
+  .teacher-groups-inner:not(:first-child){
+    margin-top: 30px;
+  }
+  .fade-enter-active, .fade-leave-active {
+    transition: opacity .5s
+  }
+  .fade-enter, .fade-leave-to{
+    opacity: 0
   }
 </style>
